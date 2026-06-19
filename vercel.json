@@ -1,0 +1,30 @@
+{
+  "services": {
+    "web": {
+      "root": "frontend/",
+      "framework": "vite",
+      "rewrites": [
+        {
+          "source": "/(.*)",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    "server": {
+      "root": ".",
+      "framework": "node",
+      "entrypoint": "src/server.ts",
+      "devCommand": "pnpm dev"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/server/(.*)",
+      "destination": { "service": "server" }
+    },
+    {
+      "source": "/(.*)",
+      "destination": { "service": "web" }
+    }
+  ]
+}
