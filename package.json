@@ -5,14 +5,14 @@
     "dev": "tsx watch src/server.ts"
   },
   "dependencies": {
-    "@hono/node-ws": "^1.2.0",
+    "@hono/node-ws": "^1.3.1",
     "dotenv": "^17.4.2",
-    "hono": "4.12.25",
+    "hono": "4.13.13",
     "ioredis": "^5.11.1"
   },
   "devDependencies": {
-    "@types/node": "^20.11.17",
-    "tsx": "^4.7.1",
-    "typescript": "^5.8.3"
+    "@types/node": "^20.19.43",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
   }
 }
